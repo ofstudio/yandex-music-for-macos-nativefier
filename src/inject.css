@@ -1,0 +1,61 @@
+/* macOS draggable bar */
+#macos-draggable-bar {
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 10000;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.head {
+  padding-top: 20px !important;
+}
+
+/* 
+  Поддержка темной темы
+  (Аватар) => Настройки => Прочее => Темная тема
+*/
+body.theme-black #macos-draggable-bar {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 1) 10%,
+    rgba(20, 20, 20, 0) 100%
+  );
+}
+
+body.theme-black {
+  background-color: rgb(20, 20, 20) !important;
+}
+
+body.theme-black::-webkit-scrollbar {
+  background-color: rgb(25, 25, 25);
+  width: 12px;
+}
+
+body.theme-black::-webkit-scrollbar-thumb:window-inactive,
+body.theme-black::-webkit-scrollbar-thumb {
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  border: 2px solid rgb(25, 25, 25);
+}
+
+/* Remove right sidebar */
+.sidebar.deco-pane {
+  display: none !important;
+}
+
+.centerblock-wrapper.deco-pane {
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+
+[class*="page-main__"] {
+  max-width: 100% !important;
+}
