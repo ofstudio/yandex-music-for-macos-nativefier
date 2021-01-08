@@ -1,4 +1,4 @@
-BUILD_VERSION=28
-APP_VERSION=1.1
+BUILD_VERSION=53
+APP_VERSION=1.2
 APP_COPYRIGHT="Copyright: Oleg Fomin <ofstudio@yandex.ru>"
 NATIVEFIER_VERSION=`docker run --rm jiahaog/nativefier --version`
