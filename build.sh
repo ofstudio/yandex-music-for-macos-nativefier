@@ -13,6 +13,7 @@ docker run  \
   -v `pwd`/src:/src \
   jiahaog/nativefier \
   -p mac \
+  -a arm64 \
   --app-version "${APP_VERSION}" \
   --build-version "${BUILD_VERSION}" \
   --app-copyright "${APP_COPYRIGHT}" \
